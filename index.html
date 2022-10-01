@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script DOM</title>
+</head>
+<body>
+    <h1>Java Script DOM</h1>
+    <input type="text" id="num1" />
+    <br>
+     <input type="text" id="num2" />
+     <br>
+      <input type="text" id="sum" readonly="readonly" />
+      <br>
+      <input type="button" value="calc" onclick="calc()" />
+      <br><br><br>
+      <div>
+<p> Welcome to the show more</p>
+        <a href="#" id="more" onclick= "showText()">Read more ...</a>
+        <span id="text" style= "display:none">Welcome to JavaScript and DOM.</span>
+      </div>
+      <br><br>
+      <p>---------------------------------------------------------------------------</p>
+       <p>---------------------------------------------------------------------------</p>
+
+
+       <div>
+        <h1>List of Items</h1>
+<ul id="items">
+    <li class="l">first item <button onclick="handleDelete()" >Delete</button></li>
+    <li class="l">second item <button  onclick="handleDelete()" >Delete</button></li>
+    <li class="l">third item <button  onclick="handleDelete()" >Delete</button></li>
+</ul>
+<textarea id="result">
+
+</textarea>
+<br>
+<button onclick="extractText()">Extract Text</button>
+
+
+
+<div>
+
+
+<ul id="items"></ul>
+<input type="text" id="newText" />
+<input type="button" value="Add"onclick="addItem()">
+
+
+</div>
+<br><br><br>
+
+
+<div id="time" style="border:3px solid blue; text-align:center; font-size:2em; margin-bottom:10px">
+    <span id="min">00:</span><span id="sec">00</span>
+    </div>
+    <button id="startBtn" onclick="handlestart()">Start</button>
+    <button id="stopBtn" onclick="handlestop()">Stop</button>
+    <button id="resBtn" onclick="handlereset()">Reset</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
